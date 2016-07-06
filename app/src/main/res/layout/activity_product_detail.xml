@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/text_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:id="@+id/thumbnail_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/product_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black"
+                tools:text="Product Name" />
+
+            <TextView
+                android:id="@+id/product_quantity_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                tools:text="Product Quantity" />
+
+            <TextView
+                android:id="@+id/product_price_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                tools:text="Product Price" />
+
+            <TextView
+                android:id="@+id/product_sold_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                tools:text="Item Sold" />
+
+            <TextView
+                android:id="@+id/supplier_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                tools:text="Supplier Name" />
+
+            <TextView
+                android:id="@+id/supplier_contact_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                tools:text="Supplier Contact" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sell_product_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Track Sale" />
+
+        <Button
+            android:id="@+id/receive_product_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Receive Shipment" />
+
+        <Button
+            android:id="@+id/order_product_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Product" />
+
+        <Button
+            android:id="@+id/delete_product_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Product" />
+    </LinearLayout>
+</ScrollView>
